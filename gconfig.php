@@ -12,8 +12,8 @@
     require_once 'Google/contrib/Google_DriveService.php';
 
     $client = new Google_Client();
-    $client->setClientId('792383470275-58rbkimj392rnqlhmav0idci4s3eckbr.apps.googleusercontent.com');
-    $client->setClientSecret('d3m8Ds-VF-TMmPb8H7yO-XkJ');
+    $client->setClientId('Your Google Cliednt Id');
+    $client->setClientSecret('Your Google Client Secret');
     $client->setRedirectUri($url);
     $client->setScopes(array('https://www.googleapis.com/auth/drive'));
     
