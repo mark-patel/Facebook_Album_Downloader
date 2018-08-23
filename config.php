@@ -5,13 +5,13 @@
 
 	//Facbook API Configuration
     $fb = new Facebook\Facebook([
-  				'app_id' => '253545741848173', 
-	  			'app_secret' => '80a13f195788fd31f969e619cd2c3655',
+  				'app_id' => 'Your Facebook App Id', 
+	  			'app_secret' => 'Your Facebook App Secret',
 	  			'default_graph_version' => 'v2.11',
   			]);
     $helper = $fb->getRedirectLoginHelper();
-	$loginUrl = $helper->getLoginUrl('https://patelmayur.azurewebsites.net/RTCamp_Facebook_Assignment/callback.php');
-	$logoutURL = $helper->getLogoutUrl($_SESSION['fb_access_token'], 'https://patelmayur.azurewebsites.net/RTCamp_Facebook_Assignment/logout.php');
+	$loginUrl = $helper->getLoginUrl('Yoour Facebook App Redirect Url');
+	$logoutURL = $helper->getLogoutUrl($_SESSION['fb_access_token'], 'Your Facebook App Redircet Domain'.'/logout.php');
 
 
 	//USER DETAIL + AVTAR
@@ -46,8 +46,8 @@
 	function getCover($albumId)
 	{
 		$fb = new Facebook\Facebook([
-  				'app_id' => '253545741848173',
-	  			'app_secret' => '80a13f195788fd31f969e619cd2c3655',
+  				'app_id' => 'Your Facebook App Id',
+	  			'app_secret' => 'Your Facebook App Secret',
 	  			'default_graph_version' => 'v2.11',
   			]);
 		try {
