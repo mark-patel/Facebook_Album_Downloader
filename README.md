@@ -22,6 +22,7 @@ https://patelmayur.azurewebsites.net/RTCamp_Facebook_Assignment
 ## Note
 * This application cannot store user details.
 * Photos are stored on the server side for the very little amount of time and it will be deleted automatically after the user download the zip file.
+* You need to download and add A third-party OAuth application API of Google(Drive API) and Facebook.
 
 ## Contact:
 * Suggestions are accepted.
